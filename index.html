@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API JSON SAVER</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <nav>
@@ -27,9 +28,12 @@ it is frustrating from time to time to have to make multiple requests to the sam
             </div>
         </div>
         <main>
-
+            <p>URL: </p>
+            <input id="url" type="text">
+            <button onclick="download()">Download</button>
         </main>
     </section>
     <script src="code.js" defer></script>
+    <script src="download.js" defer></script>
 </body>
 </html>

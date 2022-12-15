@@ -9,6 +9,7 @@
 }
 
 body {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,17 +33,18 @@ body nav h1 {
   font-size: 4rem;
 }
 body section {
-  min-height: 200vh;
+  height: 100vh;
   width: 100vw;
   background-color: rgb(37, 37, 37);
 }
 body section div.presentation {
   gap: 3rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
 body section div.presentation div.container {
+  overflow: auto;
   display: grid;
   place-items: center;
   position: relative;
@@ -73,6 +75,46 @@ body section div.presentation div.p_text h5 {
   text-align: justify;
   text-justify: auto;
   color: rgb(214, 214, 214);
+}
+body section main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5rem;
+  align-items: center;
+}
+body section main p {
+  color: rgb(255, 255, 255);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+body section main input {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  width: 30%;
+  height: 10px;
+}
+body section main button {
+  color: white;
+  background-color: rgb(45, 100, 119);
+  padding: 2rem;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  margin-left: 2rem;
+  border-radius: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+body section main button:hover {
+  background-color: rgb(34, 72, 85);
+}
+body section main button:active {
+  color: rgb(45, 100, 119);
+  background-color: white;
 }
 
 .hidden {
