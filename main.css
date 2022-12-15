@@ -1,25 +1,85 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700;300&display=swap");
 :root {
   font-size: 62.5%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1.6rem;
 }
 body nav {
   width: 100vw;
   height: 80px;
-  position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(32, 32, 32);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid black;
 }
 body nav h1 {
-  font-family: "Roboto Slab", serif;
+  color: rgb(255, 255, 255);
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 900;
   font-size: 4rem;
+}
+body section {
+  min-height: 200vh;
+  width: 100vw;
+  background-color: rgb(37, 37, 37);
+}
+body section div.presentation {
+  gap: 3rem;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+body section div.presentation div.container {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+body section div.presentation div.container img {
+  border-radius: 70px;
+}
+body section div.presentation div.container #eyes, body section div.presentation div.container #eyes img {
+  position: absolute;
+}
+body section div.presentation div.p_text {
+  display: block;
+  height: 100%;
+}
+body section div.presentation div.p_text p {
+  display: block;
+  margin-top: 4rem;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+}
+body section div.presentation div.p_text h5 {
+  max-width: 800px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: auto;
+  color: rgb(214, 214, 214);
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.show {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
